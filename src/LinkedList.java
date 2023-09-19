@@ -149,4 +149,22 @@ public class LinkedList {
         }
     }
 
+    public void remplazarPorPosicion(int posicion, int valor) {
+       if (posicion < 0) {
+            throw new IndexOutOfBoundsException();
+        } else if (posicion == 0) {
+            head.value = valor;
+        } else {
+            Node actual = head;
+            for (int i = 0; i < posicion; i++) {
+                if (actual == null) {
+                    throw new IndexOutOfBoundsException();
+                }
+                actual = actual.next;
+            }
+            actual.value = valor;
+       }
+
+    }
+
 }

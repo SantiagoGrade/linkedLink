@@ -11,7 +11,10 @@ public class Main {
         linkedList.agregarValorAlInicio(23);
         linkedList.agregarValorAlInicio(16);
 
-        linkedList.agregarPorPosicion(2,543);
+        linkedList.agregarPorPosicion(1, 543);
+        // imprimir linkedlist
+        linkedList.imprimirLinkedList();
+        linkedList.remplazarPorPosicion(1, 400);
         linkedList.imprimirLinkedList();
 
         System.out.println(linkedList.buscarPorPosicion(2).value);
@@ -19,12 +22,11 @@ public class Main {
 
         boolean a = linkedList.buscarPorContenido(222);
 
-        if (a == true){
+        if (a == true) {
             System.out.println("El valor se encuentra en la linkedlist");
-        }else {
+        } else {
             System.out.println("El valor no se encuentra en la linkedlist");
         }
-
         linkedList.eliminarPorPosicion(2);
         linkedList.imprimirLinkedList();
         linkedList.eliminarTail();
