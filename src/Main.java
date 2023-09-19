@@ -1,3 +1,5 @@
+package linkedLink.src;
+
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
@@ -22,5 +24,12 @@ public class Main {
         }else {
             System.out.println("El valor no se encuentra en la linkedlist");
         }
+
+        linkedList.eliminarPorPosicion(2);
+        linkedList.imprimirLinkedList();
+        linkedList.eliminarTail();
+        linkedList.imprimirLinkedList();
+        linkedList.eliminarHead();
+        linkedList.imprimirLinkedList();
     }
 }
